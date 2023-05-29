@@ -1,0 +1,93 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "baseline",
+    "contents": []
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "คุณลูกค้า ได้รับวัตถุดิบ",
+        "size": "xl",
+        "align": "center",
+        "color": "#ffffff",
+        "margin": "xxl"
+      },
+      {
+        "type": "text",
+        "text": "ครบถ้วนแล้ว",
+        "size": "xl",
+        "align": "center",
+        "color": "#ffffff"
+      },
+      {
+        "type": "text",
+        "text": "ใช่ไหมคะ?",
+        "size": "xl",
+        "align": "center",
+        "color": "#ffffff"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ใช่",
+            "align": "center",
+            "margin": "sm",
+            "size": "xl",
+            "color": "#ffffff",
+            "weight": "bold"
+          }
+        ],
+        "borderWidth": "medium",
+        "borderColor": "#ffffff",
+        "cornerRadius": "md",
+        "spacing": "none",
+        "margin": "xxl",
+        "action": {
+          "type": "message",
+          "label": "action",
+          "text": "#ได้รับวัตถุดิบครบถ้วนแล้ว"
+        }
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ไม่ใช่",
+            "align": "center",
+            "margin": "sm",
+            "size": "xl",
+            "color": "#C0C0C0",
+            "weight": "bold"
+          }
+        ],
+        "borderWidth": "medium",
+        "borderColor": "#C0C0C0",
+        "cornerRadius": "md",
+        "spacing": "none",
+        "margin": "xxl",
+        "action": {
+          "type": "message",
+          "label": "action",
+          "text": "#ยังไม่ได้รับวัตถุดิบครบถ้วน"
+        }
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "15deg",
+      "startColor": "#9400d3",
+      "endColor": "#8D1ECC",
+      "centerColor": "#FF1493"
+    }
+  }
+}
