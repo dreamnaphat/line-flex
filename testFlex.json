@@ -1,34 +1,22 @@
 {
+    "type": "flex",
+    "altText": "this is a flex message",
+    "contents": {
   "type": "bubble",
-  "hero": {
-    "type": "box",
-    "layout": "baseline",
-    "contents": []
-  },
   "body": {
     "type": "box",
     "layout": "vertical",
     "contents": [
       {
         "type": "text",
-        "text": "คุณลูกค้า ได้รับวัตถุดิบ",
+        "text": "กรุณากดสั่งสินค้า",
+        "weight": "regular",
         "size": "xl",
         "align": "center",
-        "color": "#ffffff",
-        "margin": "xxl"
-      },
-      {
-        "type": "text",
-        "text": "ครบถ้วนแล้ว",
-        "size": "xl",
-        "align": "center",
-        "color": "#ffffff"
-      },
-      {
-        "type": "text",
-        "text": "ใช่ไหมคะ?",
-        "size": "xl",
-        "align": "center",
+        "offsetTop": "none",
+        "offsetBottom": "none",
+        "offsetEnd": "none",
+        "margin": "none",
         "color": "#ffffff"
       },
       {
@@ -37,57 +25,35 @@
         "contents": [
           {
             "type": "text",
-            "text": "ใช่",
-            "align": "center",
-            "margin": "sm",
+            "text": "สั่งสินค้า",
             "size": "xl",
-            "color": "#ffffff",
-            "weight": "bold"
+            "align": "center",
+            "margin": "md",
+            "offsetTop": "none",
+            "weight": "bold",
+            "gravity": "center",
+            "color": "#ffffff"
           }
         ],
+        "spacing": "xl",
         "borderWidth": "medium",
         "borderColor": "#ffffff",
         "cornerRadius": "md",
-        "spacing": "none",
-        "margin": "xxl",
+        "margin": "xl",
         "action": {
-          "type": "message",
+          "type": "uri",
           "label": "action",
-          "text": "#ได้รับวัตถุดิบครบถ้วนแล้ว"
-        }
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "ไม่ใช่",
-            "align": "center",
-            "margin": "sm",
-            "size": "xl",
-            "color": "#C0C0C0",
-            "weight": "bold"
-          }
-        ],
-        "borderWidth": "medium",
-        "borderColor": "#C0C0C0",
-        "cornerRadius": "md",
-        "spacing": "none",
-        "margin": "xxl",
-        "action": {
-          "type": "message",
-          "label": "action",
-          "text": "#ยังไม่ได้รับวัตถุดิบครบถ้วน"
+          "uri": "$ORDER$"
         }
       }
     ],
     "background": {
       "type": "linearGradient",
       "angle": "15deg",
-      "startColor": "#9400d3",
-      "endColor": "#8D1ECC",
-      "centerColor": "#FF1493"
+      "startColor": "#9F00C5",
+      "endColor": "#DF00FF",
+      "centerColor": "#e4007C"
     }
   }
 }
+  }
